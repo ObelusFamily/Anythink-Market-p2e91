@@ -1,4 +1,6 @@
-WILCO_ID="`cat .wilco`"
+#!/bin/bash
+
+WILCO_ID="$(cat .wilco)"
 ENGINE_EVENT_ENDPOINT="${ENGINE_BASE_URL}/users/${WILCO_ID}/event"
 CODESPACE_BACKEND_HOST="${CODESPACE_NAME}-3000.githubpreview.dev"
 CODESPACE_BACKEND_URL="https://${CODESPACE_BACKEND_HOST}"
